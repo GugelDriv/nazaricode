@@ -29,13 +29,13 @@ services:
       wp-network:
 
   wpdb:
-    image: mariadb:10.5.4
+    image: mysql:5.7
     restart: always
     environment:
-      - MYSQL_ROOT_PASSWORD=db_passwd                     # change this
-      - MYSQL_DATABASE=wordpress                          # change this
-      - MYSQL_USER=wpuser                                 # change this
-      - MYSQL_PASSWORD=wp_passwd                          # change this
+      MYSQL_DATABASE: exampledb
+      MYSQL_USER: exampleuser
+      MYSQL_PASSWORD: examplepass
+      MYSQL_RANDOM_ROOT_PASSWORD: '1'
     volumes:
       - ./wordpress-db/wpdb-data:/var/lib/mysql
     networks:
@@ -44,17 +44,18 @@ services:
   wp:
     depends_on:
       - wpdb
-    image: wordpress:latest
     volumes:
       - ./wordpress/wp-data:/var/www/html/wordpress
     ports:
       - "8080:80"
+    image: wordpress
     restart: always
+    container_name: wp
     environment:
-      - WORDPRESS_DB_HOST=wpdb:3306
-      - WORDPRESS_DB_USER=wpuser                          # change this
-      - WORDPRESS_DB_PASSWORD=wp_passwd                   # change this
-      - WORDPRESS_DB_NAME=wordpress                       # change this
+      - WORDPRESS_DB_HOST=db
+      - WORDPRESS_DB_USER=exampleuser
+      - WORDPRESS_DB_PASSWORD=examplepass
+      - WORDPRESS_DB_NAME=exampledb
       - VIRTUAL_HOST=www.hear-book.com                      # change this
       - VIRTUAL_PORT=80
       - VIRTUAL_PROTO=http
