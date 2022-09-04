@@ -21,7 +21,8 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
 		<link rel="profile" href="https://gmpg.org/xfn/11">
-
+		<link rel="icon" href="https://nazaricode.com/wp-content/uploads/2022/09/icon.jpg">
+		
 		<?php wp_head(); ?>
 
 	</head>
