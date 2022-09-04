@@ -17,12 +17,12 @@
 
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		
-		<!-- adsense -->
+		
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
-         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5656899715612085"
-     crossorigin="anonymous"></script>
-     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5656899715612085"
-     crossorigin="anonymous"></script>
+
+		<!-- adsense -->        
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5656899715612085" crossorigin="anonymous"></script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5656899715612085" crossorigin="anonymous"></script>
      
         <!-- add bootstrap --> 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
