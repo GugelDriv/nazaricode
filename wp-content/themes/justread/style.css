@@ -2126,4 +2126,6 @@ object {
 	display: block;
 }
 
-/*# sourceMappingURL=style.css.map */
+.topic-home {
+	min-height: 100px;
+}
